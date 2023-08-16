@@ -33,6 +33,7 @@ export default async (req, res) => {
     border_color,
     disable_animations,
     hide_progress,
+    role,
   } = req.query;
   res.setHeader("Content-Type", "image/svg+xml");
 
@@ -58,6 +59,7 @@ export default async (req, res) => {
     const topLangs = await fetchTopLanguages(
       username,
       parseArray(exclude_repo),
+      parseArray(role),
       size_weight,
       count_weight,
     );
