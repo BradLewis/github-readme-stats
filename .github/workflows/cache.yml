@@ -17,6 +17,7 @@ jobs:
         name: Download the stats file
         with:
           url: "https://github-readme-stats-nu-lyart-96.vercel.app/api?username=bradlewis&count_private=true&show_icons=true&theme=onedark&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR"
+          target: grs
           filename: stats.svg # Need to have the file name prepared as svg
       - uses: actions/upload-artifact@master
         with:
